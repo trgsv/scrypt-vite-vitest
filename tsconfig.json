@@ -11,7 +11,7 @@
 		"resolveJsonModule": true,
 		"isolatedModules": true,
 		"esModuleInterop": true,
-		"noEmit": true,
+		"noEmit": false,
 		"noUnusedLocals": true,
 		"noUnusedParameters": true,
 		"noImplicitReturns": true,
@@ -24,7 +24,9 @@
 				"outDir": "./scrypt", // Optional, define the auto-generated `.scrypt` files folder
 				"debug": false // Optional, enable/disable debug log in console.
 			}
-		]
+		],
+		"outDir": "./dist",
+		"sourceMap": true
 	},
 	"include": [
 		"src"
