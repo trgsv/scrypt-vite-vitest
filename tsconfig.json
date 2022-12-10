@@ -1,0 +1,32 @@
+{
+	"compilerOptions": {
+		"target": "ES2021",
+		"useDefineForClassFields": true,
+		"module": "ESNext",
+		"lib": [
+			"ES2021"
+		],
+		"moduleResolution": "Node",
+		"strict": true,
+		"resolveJsonModule": true,
+		"isolatedModules": true,
+		"esModuleInterop": true,
+		"noEmit": true,
+		"noUnusedLocals": true,
+		"noUnusedParameters": true,
+		"noImplicitReturns": true,
+		"skipLibCheck": true,
+		"experimentalDecorators": true, // Required
+		"plugins": [
+			{
+				"transform": "scrypt-ts/dist/transformer", // Required
+				"transformProgram": true, // Required
+				"outDir": "./scrypt", // Optional, define the auto-generated `.scrypt` files folder
+				"debug": false // Optional, enable/disable debug log in console.
+			}
+		]
+	},
+	"include": [
+		"src"
+	]
+}
